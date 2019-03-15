@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        app:elevation="0dp"
+        app:fabSize="normal"
+        android:id="@+id/camera_capture"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_videocam_white_48dp"/>
+
+    <android.widget.Chronometer
+        android:id="@+id/camera_chronometer"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</FrameLayout>
